@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC1E5F6A3536110C09CDE68 /* Pods_RichmondChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032CFBDC137893244B19DFAA /* Pods_RichmondChatTests.framework */; };
+		4D132DF13478D41B497F4136 /* Pods_RichmondChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC794E26F76AF5397DDFFD01 /* Pods_RichmondChat.framework */; };
+		840826D21F0D36E600E616BD /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840826D11F0D36E600E616BD /* AuthProvider.swift */; };
+		840E87711F0BE46000D8A041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E87701F0BE46000D8A041 /* AppDelegate.swift */; };
+		840E87731F0BE46000D8A041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E87721F0BE46000D8A041 /* ViewController.swift */; };
+		840E87761F0BE46000D8A041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840E87741F0BE46000D8A041 /* Main.storyboard */; };
+		840E87781F0BE46000D8A041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840E87771F0BE46000D8A041 /* Assets.xcassets */; };
+		840E877B1F0BE46000D8A041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840E87791F0BE46000D8A041 /* LaunchScreen.storyboard */; };
+		840E87861F0BE46000D8A041 /* RichmondChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E87851F0BE46000D8A041 /* RichmondChatTests.swift */; };
+		840E87911F0BE46000D8A041 /* RichmondChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E87901F0BE46000D8A041 /* RichmondChatUITests.swift */; };
+		8474813C1F0BFA8900182533 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8474813B1F0BFA8800182533 /* GoogleService-Info.plist */; };
+		848ECAD61F13CFAD0016FBC4 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECAD51F13CFAD0016FBC4 /* MessagesHandler.swift */; };
+		84A266841F16682400A68BB6 /* fp.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A266831F16682400A68BB6 /* fp.png */; };
+		84AD83971F13AA6300DB5355 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD83961F13AA6300DB5355 /* ChatViewController.swift */; };
+		84AD839A1F13B14A00DB5355 /* no-avatar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84AD83991F13B14A00DB5355 /* no-avatar.gif */; };
+		84BD24001F0D25590042DAED /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD23FF1F0D25590042DAED /* RegistrationViewController.swift */; };
+		84BF79A81F1CE86A0034AA3F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF79A71F1CE86A0034AA3F /* AboutViewController.swift */; };
+		84CAC4CE1F1264C3004C6038 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAC4CD1F1264C2004C6038 /* ChatRoomViewController.swift */; };
+		84CAC4D01F12839C004C6038 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAC4CF1F12839C004C6038 /* Contact.swift */; };
+		84DFF3E81F0D4055006815F6 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFF3E71F0D4055006815F6 /* DBProvider.swift */; };
+		84DFF3EA1F0D43CC006815F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFF3E91F0D43CC006815F6 /* Constants.swift */; };
+		DAA81BC1D448ED810734F4B7 /* Pods_RichmondChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B69A33D4267EED0DB9905F8 /* Pods_RichmondChatUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840E87821F0BE46000D8A041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840E87651F0BE46000D8A041 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840E876C1F0BE46000D8A041;
+			remoteInfo = RichmondChat;
+		};
+		840E878D1F0BE46000D8A041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840E87651F0BE46000D8A041 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840E876C1F0BE46000D8A041;
+			remoteInfo = RichmondChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032CFBDC137893244B19DFAA /* Pods_RichmondChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichmondChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0FD105D03055519DEBEC48 /* Pods-RichmondChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChat/Pods-RichmondChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0EA4170F83288237D41285 /* Pods-RichmondChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChatUITests/Pods-RichmondChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B69A33D4267EED0DB9905F8 /* Pods_RichmondChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichmondChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5ABEEAA7D247146D890CDB /* Pods-RichmondChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChatUITests/Pods-RichmondChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80E6E93FC1B55D96B17976FC /* Pods-RichmondChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChatTests/Pods-RichmondChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840826D11F0D36E600E616BD /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		840E876D1F0BE46000D8A041 /* RichmondChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichmondChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E87701F0BE46000D8A041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840E87721F0BE46000D8A041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840E87751F0BE46000D8A041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840E87771F0BE46000D8A041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840E877A1F0BE46000D8A041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840E877C1F0BE46000D8A041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840E87811F0BE46000D8A041 /* RichmondChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichmondChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E87851F0BE46000D8A041 /* RichmondChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichmondChatTests.swift; sourceTree = "<group>"; };
+		840E87871F0BE46000D8A041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840E878C1F0BE46000D8A041 /* RichmondChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichmondChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E87901F0BE46000D8A041 /* RichmondChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichmondChatUITests.swift; sourceTree = "<group>"; };
+		840E87921F0BE46000D8A041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8474813B1F0BFA8800182533 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		848ECAD51F13CFAD0016FBC4 /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
+		84A266831F16682400A68BB6 /* fp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fp.png; path = images/fp.png; sourceTree = "<group>"; };
+		84AD83961F13AA6300DB5355 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84AD83991F13B14A00DB5355 /* no-avatar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "no-avatar.gif"; path = "images/no-avatar.gif"; sourceTree = "<group>"; };
+		84BD23FF1F0D25590042DAED /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		84BF79A71F1CE86A0034AA3F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		84CAC4CD1F1264C2004C6038 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		84CAC4CF1F12839C004C6038 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		84DFF3E71F0D4055006815F6 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		84DFF3E91F0D43CC006815F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C844C4BC8EA8BED5D45D659 /* Pods-RichmondChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChatTests/Pods-RichmondChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABAD224DBBE2AE0A1091F8FB /* Pods-RichmondChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichmondChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichmondChat/Pods-RichmondChat.release.xcconfig"; sourceTree = "<group>"; };
+		CC794E26F76AF5397DDFFD01 /* Pods_RichmondChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichmondChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840E876A1F0BE46000D8A041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D132DF13478D41B497F4136 /* Pods_RichmondChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E877E1F0BE46000D8A041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1E5F6A3536110C09CDE68 /* Pods_RichmondChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E87891F0BE46000D8A041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA81BC1D448ED810734F4B7 /* Pods_RichmondChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ECB327DFC788292ECE33179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC794E26F76AF5397DDFFD01 /* Pods_RichmondChat.framework */,
+				032CFBDC137893244B19DFAA /* Pods_RichmondChatTests.framework */,
+				5B69A33D4267EED0DB9905F8 /* Pods_RichmondChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		466D5FFC34C81C457CBFD44A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FD105D03055519DEBEC48 /* Pods-RichmondChat.debug.xcconfig */,
+				ABAD224DBBE2AE0A1091F8FB /* Pods-RichmondChat.release.xcconfig */,
+				80E6E93FC1B55D96B17976FC /* Pods-RichmondChatTests.debug.xcconfig */,
+				9C844C4BC8EA8BED5D45D659 /* Pods-RichmondChatTests.release.xcconfig */,
+				5B0EA4170F83288237D41285 /* Pods-RichmondChatUITests.debug.xcconfig */,
+				7D5ABEEAA7D247146D890CDB /* Pods-RichmondChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		840E87641F0BE46000D8A041 = {
+			isa = PBXGroup;
+			children = (
+				840E876F1F0BE46000D8A041 /* RichmondChat */,
+				84AD83981F13B13700DB5355 /* images */,
+				840E87841F0BE46000D8A041 /* RichmondChatTests */,
+				840E878F1F0BE46000D8A041 /* RichmondChatUITests */,
+				840E876E1F0BE46000D8A041 /* Products */,
+				466D5FFC34C81C457CBFD44A /* Pods */,
+				2ECB327DFC788292ECE33179 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		840E876E1F0BE46000D8A041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840E876D1F0BE46000D8A041 /* RichmondChat.app */,
+				840E87811F0BE46000D8A041 /* RichmondChatTests.xctest */,
+				840E878C1F0BE46000D8A041 /* RichmondChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840E876F1F0BE46000D8A041 /* RichmondChat */ = {
+			isa = PBXGroup;
+			children = (
+				840E87701F0BE46000D8A041 /* AppDelegate.swift */,
+				840826D11F0D36E600E616BD /* AuthProvider.swift */,
+				84DFF3E71F0D4055006815F6 /* DBProvider.swift */,
+				840E87721F0BE46000D8A041 /* ViewController.swift */,
+				84BD23FF1F0D25590042DAED /* RegistrationViewController.swift */,
+				84CAC4CD1F1264C2004C6038 /* ChatRoomViewController.swift */,
+				84AD83961F13AA6300DB5355 /* ChatViewController.swift */,
+				84BF79A71F1CE86A0034AA3F /* AboutViewController.swift */,
+				848ECAD51F13CFAD0016FBC4 /* MessagesHandler.swift */,
+				84DFF3E91F0D43CC006815F6 /* Constants.swift */,
+				84CAC4CF1F12839C004C6038 /* Contact.swift */,
+				840E87741F0BE46000D8A041 /* Main.storyboard */,
+				840E87771F0BE46000D8A041 /* Assets.xcassets */,
+				840E87791F0BE46000D8A041 /* LaunchScreen.storyboard */,
+				840E877C1F0BE46000D8A041 /* Info.plist */,
+				8474813B1F0BFA8800182533 /* GoogleService-Info.plist */,
+			);
+			path = RichmondChat;
+			sourceTree = "<group>";
+		};
+		840E87841F0BE46000D8A041 /* RichmondChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				840E87851F0BE46000D8A041 /* RichmondChatTests.swift */,
+				840E87871F0BE46000D8A041 /* Info.plist */,
+			);
+			path = RichmondChatTests;
+			sourceTree = "<group>";
+		};
+		840E878F1F0BE46000D8A041 /* RichmondChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				840E87901F0BE46000D8A041 /* RichmondChatUITests.swift */,
+				840E87921F0BE46000D8A041 /* Info.plist */,
+			);
+			path = RichmondChatUITests;
+			sourceTree = "<group>";
+		};
+		84AD83981F13B13700DB5355 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84AD83991F13B14A00DB5355 /* no-avatar.gif */,
+				84A266831F16682400A68BB6 /* fp.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840E876C1F0BE46000D8A041 /* RichmondChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840E87951F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChat" */;
+			buildPhases = (
+				6FDABD107DA7301AD017890E /* [CP] Check Pods Manifest.lock */,
+				840E87691F0BE46000D8A041 /* Sources */,
+				840E876A1F0BE46000D8A041 /* Frameworks */,
+				840E876B1F0BE46000D8A041 /* Resources */,
+				F19B6F86723D9840688D3F98 /* [CP] Embed Pods Frameworks */,
+				DF567349ADCE0765C405886B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichmondChat;
+			productName = RichmondChat;
+			productReference = 840E876D1F0BE46000D8A041 /* RichmondChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840E87801F0BE46000D8A041 /* RichmondChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840E87981F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChatTests" */;
+			buildPhases = (
+				A589DB6F238700FF623F423E /* [CP] Check Pods Manifest.lock */,
+				840E877D1F0BE46000D8A041 /* Sources */,
+				840E877E1F0BE46000D8A041 /* Frameworks */,
+				840E877F1F0BE46000D8A041 /* Resources */,
+				F0D0B1FD1852F2041D4E8853 /* [CP] Embed Pods Frameworks */,
+				188B629C85643EDCEF5E6BF0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840E87831F0BE46000D8A041 /* PBXTargetDependency */,
+			);
+			name = RichmondChatTests;
+			productName = RichmondChatTests;
+			productReference = 840E87811F0BE46000D8A041 /* RichmondChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		840E878B1F0BE46000D8A041 /* RichmondChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840E879B1F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChatUITests" */;
+			buildPhases = (
+				8D908708E63EDF23E8C7C71F /* [CP] Check Pods Manifest.lock */,
+				840E87881F0BE46000D8A041 /* Sources */,
+				840E87891F0BE46000D8A041 /* Frameworks */,
+				840E878A1F0BE46000D8A041 /* Resources */,
+				B97F92136B8478521A39199D /* [CP] Embed Pods Frameworks */,
+				3EECFF9B434078DB7052741D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840E878E1F0BE46000D8A041 /* PBXTargetDependency */,
+			);
+			name = RichmondChatUITests;
+			productName = RichmondChatUITests;
+			productReference = 840E878C1F0BE46000D8A041 /* RichmondChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840E87651F0BE46000D8A041 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Вадим Кочуров";
+				TargetAttributes = {
+					840E876C1F0BE46000D8A041 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8YX9QFZEP5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
+					};
+					840E87801F0BE46000D8A041 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8YX9QFZEP5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840E876C1F0BE46000D8A041;
+					};
+					840E878B1F0BE46000D8A041 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8YX9QFZEP5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840E876C1F0BE46000D8A041;
+					};
+				};
+			};
+			buildConfigurationList = 840E87681F0BE46000D8A041 /* Build configuration list for PBXProject "RichmondChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840E87641F0BE46000D8A041;
+			productRefGroup = 840E876E1F0BE46000D8A041 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840E876C1F0BE46000D8A041 /* RichmondChat */,
+				840E87801F0BE46000D8A041 /* RichmondChatTests */,
+				840E878B1F0BE46000D8A041 /* RichmondChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840E876B1F0BE46000D8A041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840E877B1F0BE46000D8A041 /* LaunchScreen.storyboard in Resources */,
+				8474813C1F0BFA8900182533 /* GoogleService-Info.plist in Resources */,
+				840E87781F0BE46000D8A041 /* Assets.xcassets in Resources */,
+				84A266841F16682400A68BB6 /* fp.png in Resources */,
+				84AD839A1F13B14A00DB5355 /* no-avatar.gif in Resources */,
+				840E87761F0BE46000D8A041 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E877F1F0BE46000D8A041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E878A1F0BE46000D8A041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188B629C85643EDCEF5E6BF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChatTests/Pods-RichmondChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EECFF9B434078DB7052741D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChatUITests/Pods-RichmondChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FDABD107DA7301AD017890E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D908708E63EDF23E8C7C71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A589DB6F238700FF623F423E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B97F92136B8478521A39199D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChatUITests/Pods-RichmondChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF567349ADCE0765C405886B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChat/Pods-RichmondChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D0B1FD1852F2041D4E8853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChatTests/Pods-RichmondChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19B6F86723D9840688D3F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichmondChat/Pods-RichmondChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840E87691F0BE46000D8A041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CAC4CE1F1264C3004C6038 /* ChatRoomViewController.swift in Sources */,
+				84BD24001F0D25590042DAED /* RegistrationViewController.swift in Sources */,
+				84BF79A81F1CE86A0034AA3F /* AboutViewController.swift in Sources */,
+				848ECAD61F13CFAD0016FBC4 /* MessagesHandler.swift in Sources */,
+				840E87731F0BE46000D8A041 /* ViewController.swift in Sources */,
+				84DFF3E81F0D4055006815F6 /* DBProvider.swift in Sources */,
+				84CAC4D01F12839C004C6038 /* Contact.swift in Sources */,
+				840826D21F0D36E600E616BD /* AuthProvider.swift in Sources */,
+				840E87711F0BE46000D8A041 /* AppDelegate.swift in Sources */,
+				84AD83971F13AA6300DB5355 /* ChatViewController.swift in Sources */,
+				84DFF3EA1F0D43CC006815F6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E877D1F0BE46000D8A041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840E87861F0BE46000D8A041 /* RichmondChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840E87881F0BE46000D8A041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840E87911F0BE46000D8A041 /* RichmondChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840E87831F0BE46000D8A041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840E876C1F0BE46000D8A041 /* RichmondChat */;
+			targetProxy = 840E87821F0BE46000D8A041 /* PBXContainerItemProxy */;
+		};
+		840E878E1F0BE46000D8A041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840E876C1F0BE46000D8A041 /* RichmondChat */;
+			targetProxy = 840E878D1F0BE46000D8A041 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840E87741F0BE46000D8A041 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840E87751F0BE46000D8A041 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840E87791F0BE46000D8A041 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840E877A1F0BE46000D8A041 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840E87931F0BE46000D8A041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840E87941F0BE46000D8A041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840E87961F0BE46000D8A041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0FD105D03055519DEBEC48 /* Pods-RichmondChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		840E87971F0BE46000D8A041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABAD224DBBE2AE0A1091F8FB /* Pods-RichmondChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		840E87991F0BE46000D8A041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E6E93FC1B55D96B17976FC /* Pods-RichmondChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichmondChat.app/RichmondChat";
+			};
+			name = Debug;
+		};
+		840E879A1F0BE46000D8A041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C844C4BC8EA8BED5D45D659 /* Pods-RichmondChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichmondChat.app/RichmondChat";
+			};
+			name = Release;
+		};
+		840E879C1F0BE46000D8A041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0EA4170F83288237D41285 /* Pods-RichmondChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RichmondChat;
+			};
+			name = Debug;
+		};
+		840E879D1F0BE46000D8A041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5ABEEAA7D247146D890CDB /* Pods-RichmondChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8YX9QFZEP5;
+				INFOPLIST_FILE = RichmondChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vadim.RichmondChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RichmondChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840E87681F0BE46000D8A041 /* Build configuration list for PBXProject "RichmondChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840E87931F0BE46000D8A041 /* Debug */,
+				840E87941F0BE46000D8A041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840E87951F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840E87961F0BE46000D8A041 /* Debug */,
+				840E87971F0BE46000D8A041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840E87981F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840E87991F0BE46000D8A041 /* Debug */,
+				840E879A1F0BE46000D8A041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840E879B1F0BE46000D8A041 /* Build configuration list for PBXNativeTarget "RichmondChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840E879C1F0BE46000D8A041 /* Debug */,
+				840E879D1F0BE46000D8A041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840E87651F0BE46000D8A041 /* Project object */;
+}

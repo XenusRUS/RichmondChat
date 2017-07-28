@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RichmondChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsk-xt-m9t">
+                                <rect key="frame" x="16" y="218" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRS-ha-Vtg">
+                                <rect key="frame" x="16" y="275" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC8-9s-i2j">
+                                <rect key="frame" x="16" y="328" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.015731923282146454" green="0.60889017581939697" blue="0.98986905813217163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOK-7Y-sSg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fp.png" translatesAutoresizingMaskIntoConstraints="NO" id="98r-1t-T5N">
+                                <rect key="frame" x="-62.5" y="66" width="500" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-FB-RpN">
+                                <rect key="frame" x="113" y="582" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <state key="normal" title="Зарегистрироваться"/>
+                                <connections>
+                                    <action selector="registrationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUu-Np-Hdy"/>
+                                    <segue destination="Mgi-Cn-9Rr" kind="show" id="NZV-BQ-b8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93098336458206177" green="0.82893437147140503" blue="0.037082500755786896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="lsk-xt-m9t" id="7mw-4x-D16"/>
+                        <outlet property="passwordField" destination="rRS-ha-Vtg" id="bw8-4B-AWe"/>
+                        <segue destination="0O5-kb-rjW" kind="show" identifier="loginSegue" id="vib-Z6-HQD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="ZKR-4b-RuB">
+            <objects>
+                <viewController id="v98-4a-GCz" customClass="AboutViewController" customModule="RichmondChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MXE-jz-Zeh"/>
+                        <viewControllerLayoutGuide type="bottom" id="MB6-cF-sBY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="612-eM-unE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fp.png" translatesAutoresizingMaskIntoConstraints="NO" id="pUK-jU-RzM">
+                                <rect key="frame" x="0.0" y="72" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-zH-kwA">
+                                <rect key="frame" x="16" y="208" width="343" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Магазин автозапчастей
+«Fast Zap»
+
+Запчасти быстро для Вас!
+
+Оптово-розничная компания по продаже автозапчастей и тюнинга, основанная в 2016 году двумя любителями автомобилей и тюнинга. Наша команда специализируется на доставке и продаже автозапчастей для иностранных автомобилей, продаже систем охлаждения акпп, двс, изготовлению тормозных систем, продаже коллекционных дисков, продаже интересных б/у (редких) деталей, автомобильной акустики, расходников, жидкостей и много другого.
+
+С недавнего времени, в составе нашей команды появился автомобильный электрик. Сфера его деятельности – это исправление проблемных мест в проводке автомобиля, ремонт и диагностика систем, блоков, тюнинг оптики, тюнинг фар и фонарей, другие интересные задачки, связанные с электрикой в автомобиле.
+На данном этапе заключено боле 30 договоров с:
+• Центральными складами запчастей
+• Дистрибьюторами масел и жидкостей
+• Крупнейшими складами неоргиниальных (альтернативных) запчастей
+• Представителями заводов изготовителей
+• Посредниками по перевозке запчастей из Америки и Дубай</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutText" destination="q7p-zH-kwA" id="9cf-d2-d7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiQ-dX-eYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="-284.70764617691157"/>
+        </scene>
+        <!--Контакты-->
+        <scene sceneID="PY4-Tl-ZrQ">
+            <objects>
+                <viewController id="9Tf-YX-oC8" customClass="ChatRoomViewController" customModule="RichmondChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3c-sm-9Rx"/>
+                        <viewControllerLayoutGuide type="bottom" id="YSZ-Rp-ewG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xsu-Pl-cE7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0In-Mr-ouQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactCell" id="KVO-dz-nxX">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KVO-dz-nxX" id="gLC-h9-cBj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="09r-dK-Ty3" kind="show" id="g6B-zL-Ax7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Tf-YX-oC8" id="hoE-We-ZKP"/>
+                                    <outlet property="delegate" destination="9Tf-YX-oC8" id="eEj-MM-2PY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0In-Mr-ouQ" firstAttribute="bottom" secondItem="YSZ-Rp-ewG" secondAttribute="top" id="8zO-3r-1Fk"/>
+                            <constraint firstItem="0In-Mr-ouQ" firstAttribute="width" secondItem="xsu-Pl-cE7" secondAttribute="height" multiplier="375:667" id="Drk-Ko-aua"/>
+                            <constraint firstItem="0In-Mr-ouQ" firstAttribute="leading" secondItem="xsu-Pl-cE7" secondAttribute="leading" id="OsY-ew-6s8"/>
+                            <constraint firstItem="0In-Mr-ouQ" firstAttribute="top" secondItem="xsu-Pl-cE7" secondAttribute="top" id="kME-H1-pGV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Контакты" id="3hb-qX-1bK">
+                        <barButtonItem key="leftBarButtonItem" image="about us" id="ce1-7Q-6gS">
+                            <connections>
+                                <segue destination="v98-4a-GCz" kind="show" id="8pY-s5-aBY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Выход" id="cRz-wH-qFG">
+                            <connections>
+                                <action selector="logout:" destination="9Tf-YX-oC8" id="mXf-nE-lm1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="0In-Mr-ouQ" id="7fg-yM-tnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3l-x5-spT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="507.79610194902551"/>
+        </scene>
+        <!--Чат-->
+        <scene sceneID="smB-8g-cN1">
+            <objects>
+                <viewController id="09r-dK-Ty3" customClass="ChatViewController" customModule="RichmondChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLh-tl-vBl"/>
+                        <viewControllerLayoutGuide type="bottom" id="kXh-u0-igm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMo-UK-AEu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Чат" id="KDB-F3-Bzl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdC-Zb-r5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="508"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="MhK-Vd-hIa">
+            <objects>
+                <viewController id="Mgi-Cn-9Rr" customClass="RegistrationViewController" customModule="RichmondChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xpb-2D-o6T"/>
+                        <viewControllerLayoutGuide type="bottom" id="m8d-ra-Oqk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p0d-NG-VeD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXy-BE-RTn">
+                                <rect key="frame" x="16" y="218" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zTP-5c-1iv">
+                                <rect key="frame" x="16" y="269" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gAB-v7-4og">
+                                <rect key="frame" x="16" y="327" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fp.png" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-7W-6CG">
+                                <rect key="frame" x="-62.5" y="66" width="500" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jf-AL-8Lh">
+                                <rect key="frame" x="16" y="397" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.015731923282146454" green="0.60889017581939697" blue="0.98986905813217163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Создать учетную запись">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmButton:" destination="Mgi-Cn-9Rr" eventType="touchUpInside" id="hOL-Mu-NGV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnw-76-tWL">
+                                <rect key="frame" x="95.5" y="617" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <state key="normal" title="Уже есть учетная запись?"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="X3m-7D-oRi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93098336458206177" green="0.82893437147140503" blue="0.037082500755786896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="gAB-v7-4og" id="khB-Ag-OhB"/>
+                        <outlet property="emailTextField" destination="tXy-BE-RTn" id="91s-do-jI4"/>
+                        <outlet property="passwordTextField" destination="zTP-5c-1iv" id="j8y-bz-1H7"/>
+                        <segue destination="0O5-kb-rjW" kind="show" identifier="registrationSegue" id="mDd-TF-ueh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5t-65-ZXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="813.64317841079469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ll5-TI-bSe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0O5-kb-rjW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryv-3e-qzo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93098336458206177" green="0.82893437147140503" blue="0.037082500755786896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Tf-YX-oC8" kind="relationship" relationship="rootViewController" id="fvG-Cm-RHg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2I-NC-FYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="507.79610194902551"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about us" width="25" height="25"/>
+        <image name="fp.png" width="500" height="500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vib-Z6-HQD"/>
+    </inferredMetricsTieBreakers>
+</document>

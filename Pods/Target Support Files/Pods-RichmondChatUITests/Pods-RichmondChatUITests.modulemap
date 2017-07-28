@@ -1,0 +1,6 @@
+framework module Pods_RichmondChatUITests {
+  umbrella header "Pods-RichmondChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
